@@ -41,3 +41,48 @@ df_filtered.isna().sum()[df_filtered.isna().sum()>0]
 floor       10112  
 expenses     9703  
 dtype: int64  
+
+Devolución segunda entrega
+Comentario general
+
+¡Felicitaciones Francisco, tu segunda entrega está aprobada!
+Estuve revisando tu código y realmente está todo muy bien. Se nota que aprendiste todos los conceptos necesarios para hacer la transformación de los datos. Cumpliste con todas las consignas del checklist y tu solución funcionó correctamente. Hay sólo unos detalles a tener en cuenta:
+
+12) Aplicar OneHotEncoder sobre las variables categóricas para crear un dataframe categoricals_df
+*Si bien no está mal que el dataframe categorical_df quedé como float, esta parte podría mejorarse al crear el dataframe como Int64 y 2- definiendo los nombres de las columnas:
+categoricals_df = pd.DataFrame(X, columns=le.classes_, dtype='int64')
+
+No tengo más comentarios para hacerte, ya que está muy bien.
+
+Saludos, Nelson
+
+Sugerencias
+
+Con respecto a tu pregunta del punto 7), NA groups in GroupBy are automatically excluded en Python, por lo cual, no parece ser alcanzable así. Sin embargo, hay una serie de opciones en este link:
+https://stackoverflow.com/questions/18429491/groupby-columns-with-nan-missing-values
+
+Hay unas mejoras/opciones que podrían tenerse en cuenta:
+El punto 4) se podría resolver así también:
+iqr = df.price_usd_per_m2.quantile(0.75) - df.price_usd_per_m2.quantile(0.25)
+min = q1_price_usd_per_m2 - (iqr*1.5)
+max = q3_price_usd_per_m2 + (iqr*1.5)
+df_filtered = df[df.price_usd_per_m2.between(min,max)]
+
+El Punto 7) se podría resolver así también:
+df.isna().mean().sort_values(ascending=False)*100
+
+floor                      84.77  
+expenses                   73.66  
+rooms                      17.56  
+surface_covered_in_m2       3.78  
+barrio                      0.00  
+                           ...    
+lat                         0.00  
+place_with_parent_names     0.00  
+place_name                  0.00  
+property_type               0.00  
+created_on                  0.00  
+Length: 15, dtype: float64  
+El Punto 8) se podría resolver así también:
+imp_mean = SimpleImputer(strategy='mean', missing_values=np.nan)
+df[['surface_total_in_m2','surface_covered_in_m2']] = imp.fit_transform(df[['surface_total_in_m2','surface_covered_in_m2']])
