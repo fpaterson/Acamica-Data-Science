@@ -1,0 +1,29 @@
+**DATASET PRESENTACIÓN ACÁMICA: Recorridos Realizados ECOBICI 2018**
+
+Información de viajes realizados en 2018. Estación de origen y destino, hora de partida y llegada.
+
+Forma del dataset: (2619968 filas, 9 columnas)
+
+Columnas: 
+
+['bici_id_usuario',
+ 'bici_Fecha_hora_retiro',
+ 'bici_tiempo_uso',
+ 'bici_nombre_estacion_origen',
+ 'bici_estacion_origen',
+ 'bici_nombre_estacion_destino',
+ 'bici_estacion_destino',
+ 'bici_sexo',
+ 'bici_edad']
+
+Información adicional
+
+
+Licencia Atribución 2.5 Argentina (CC BY 2.5 AR)
+
+Mantenedor
+Secretaría General y Relaciones Internacionales. Subsecretaría Gestión Estratégica y Calidad Institucional. Dirección General Calidad Institucional y Gobierno Abierto 
+
+
+Página de referenciahttps://data.buenosaires.gob.ar/dataset/bicicletas-publicas
+Fuente primariaMinisterio de Desarrollo Urbano y Transporte. SS de Movilidad Sustentable y Segura
