@@ -47,6 +47,7 @@ dtype: int64
 -----------------------------------------------------------------------------------------------------------
 
 Devolución segunda entrega
+
 Comentario general
 
 ¡Felicitaciones Francisco, tu segunda entrega está aprobada!
