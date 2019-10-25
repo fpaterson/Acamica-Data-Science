@@ -1,6 +1,8 @@
 # Acamica-Data-Science
 Archivos de la carrera de data science presencial de Acámica, entre septiembre de 2019 y marzo de 2020.
 
+------------------------------------------------------------------------------------------------------------------
+
 Devolución del mentor de Acámica a la primera entrega:
 
 Comentario general
@@ -41,6 +43,8 @@ df_filtered.isna().sum()[df_filtered.isna().sum()>0]
 floor       10112  
 expenses     9703  
 dtype: int64  
+
+-----------------------------------------------------------------------------------------------------------
 
 Devolución segunda entrega
 Comentario general
