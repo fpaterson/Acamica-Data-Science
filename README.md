@@ -46,7 +46,7 @@ dtype: int64
 
 -----------------------------------------------------------------------------------------------------------
 
-Devolución segunda entrega
+Devolución del mentor de Acámica a la segunda entrega:
 
 Comentario general
 
