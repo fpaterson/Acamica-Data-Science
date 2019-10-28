@@ -1,5 +1,5 @@
 # Acamica-Data-Science
-Archivos de la carrera de data science presencial de Acámica, entre septiembre de 2019 y marzo de 2020.
+Archivos de la carrera de data science presencial de Acámica, entre septiembre de 2019 y marzo de 2020. A continuación presento los comentarios a las entregas que hice durante la carrera (disponibles en la carpeta "Entregas").
 
 ------------------------------------------------------------------------------------------------------------------
 
@@ -46,7 +46,7 @@ dtype: int64
 
 -----------------------------------------------------------------------------------------------------------
 
-Devolución segunda entrega
+Devolución del mentor de Acámica a la segunda entrega:
 
 Comentario general
 
