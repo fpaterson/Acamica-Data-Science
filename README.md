@@ -1,5 +1,5 @@
 # Acamica-Data-Science
-Archivos de la carrera de data science presencial de Acámica, entre septiembre de 2019 y marzo de 2020.
+Archivos de la carrera de data science presencial de Acámica, entre septiembre de 2019 y marzo de 2020. A continuación presento llos cometarios a las entregas que hice durante la carrera (disponibles en la carpeta "Entregas").
 
 ------------------------------------------------------------------------------------------------------------------
 
