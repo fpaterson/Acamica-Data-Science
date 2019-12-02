@@ -91,3 +91,27 @@ Length: 15, dtype: float64
 El Punto 8) se podría resolver así también:
 imp_mean = SimpleImputer(strategy='mean', missing_values=np.nan)
 df[['surface_total_in_m2','surface_covered_in_m2']] = imp.fit_transform(df[['surface_total_in_m2','surface_covered_in_m2']])
+
+---------------------------------------------------------------------------------------------------------------------
+Devolución de la mentora de Acámica a la tercera entrega:
+
+¡Felicitaciones tu entrega está aprobada!
+Entendiste como usar estos primeros algoritmos de regresión. Está todo muy prolijo y se entiende perfectamente el código de cada sección.
+
+Cumpliste con todas las consignas del checklist y la solución propuesta funcionó correctamente.
+
+Al hacer split podes agregar random_state. Esto es importante porque hace que tu experimentación sea reproducible, es decir que no cambie cada vez que lo ejecutás. Permite comparar distintas pruebas de forma más fácil.
+
+Sugerencias
+
+Te sugiero que sigas investigando sobre otros algoritmos de regresión para compararlos con los que ya conocés. Podés empezar estudiando los otros que existen en scikit-learn.
+
+Acá te dejo el link a la documentación donde figuran otros modelos que podés probar: link
+
+También podes leer el libro Python Machine Learning. Es un excelente libro para complementar el contenido de las clases.
+
+La entrega está muy bien. Cualquier duda podes consultar por el canal de slack.
+
+Saludos
+
+Daniela
