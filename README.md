@@ -115,3 +115,32 @@ La entrega está muy bien. Cualquier duda podes consultar por el canal de slack.
 Saludos
 
 Daniela
+
+-----------------------------------------------------------------------------
+Comentarios del mentor de Acámica a la cuarta entrega
+
+¡Felicitaciones Francisco, tu entrega está aprobada!
+Estuve revisando tu código y esta bien. Se nota que aprendiste todos los conceptos necesarios para hacer la Optimización de Parámetros. Cumpliste con todas las consignas del checklist y tu solución funciona correctamente en casi todos los puntos. Hay unos detalles a tener en cuenta:
+
+Checklist
+Item	Cumple
+Separación del dataset en train y test : El dataset se separa correctamente dejando un 80% para train y otro 20% para test.	Si
+param_grid: Se crea variable param_grid para los atributos max_depth y max_features	Si
+GridSearch: Se crea una variable GridSearch y se hace el fit recorriendo el param_grid con el algoritmo DecisionTreeRegresor .	Si
+Scores y mejores parámetros: Se muestran los scores y los mejores parámetros obtenidos con GridSearch.	Si (Ver notas)
+Mejor modelo: Se busca el mejor modelo para la grilla de parámetros dada	Si
+Evaluación: Se evalúa en el conjunto de test al mejor modelos	Si (Ver notas)
+Comentarios Generales
+Convertimos a RMSE.
+
+Aquí faltó aplicar la función nmsq2rmse al mejor score obtenido en el primer GridSearchCV (gridsearch.best_score ) . Esto te servirá para luego comparar el valor de estos parámetros con el GridSearchCV con un espacio de búsqueda mayor del siguiente
+De haber obtenido el RMSE del primer GridSearchCV, se hubiese comparado con el RMSE del segundo GridSearchCV el cual tuvo un error menor: es por ello que es importante ir probando distintas configuraciones de parámetros para encontrar la que mejor se adapta a nuestros datos.
+Evaluemos en testing el desempeño de este modelo.
+Aquí se hace:
+optimised_decision_tree = grid_search.best_estimator_
+y_opt_pred = optimised_decision_tree.predict(X_test)
+Y se debería haber usado el mejor estimador de grid_search_r2, del segundo modelo, no del primero, es decir:
+optimised_decision_tree = grid_search_r2.best_estimator_
+
+Con respecto a tu comentario sobre los parámetros obtenidos, no hay problema, simplemente se usó una semilla distinta np.random.seed(xxx) y por lo tanto se obtuvieron resultados distintos, ;)
+No tengo más comentarios para hacerte, ya que está bien
