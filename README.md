@@ -144,3 +144,45 @@ optimised_decision_tree = grid_search_r2.best_estimator_
 
 Con respecto a tu comentario sobre los parámetros obtenidos, no hay problema, simplemente se usó una semilla distinta np.random.seed(xxx) y por lo tanto se obtuvieron resultados distintos, ;)
 No tengo más comentarios para hacerte, ya que está bien
+
+--------------------------------------------------------------------------------------
+
+Devolución de la mentora de Acámica a la cuarta entrega
+
+Hola, gracias por el envío, la entrega ya fue evaluada.
+
+Habiendo revisado el código y el cumplimiento de los requisitos para el proyecto, confirmo que el mismo se encuentra aprobado.
+
+Puntualizo como fue evaluado cada punto del checklist en los párrafos siguientes.
+
+Vectorización del texto
+Ambos conjuntos de datos se vectorizaron siguiendo la técnica TFIDF (term frequency–inverse document frequency).
+
+Entrenamiento con LinearSVC
+Adecuado uso del algoritmo Support Vector Machine. Se genera y entrena el modelo con los parámetros indicados.
+
+Mostrar con matriz de confusión
+Todas las métricas para el modelo SVM son exhibidas: matriz de confusión, curva ROC y reporte de clasificación.
+
+Entrenamiento con múltiples modelos
+Presenta las métricas para cada nuevo algoritmo: matriz de confusión, área bajo la curva y reporte de clasificación, a partir del mejor modelo logrado.
+
+Ensamble
+Impecable generación el ensamble de modelos. Se visualizan las métricas de cada uno individual y el general (ensamble).
+
+Reentrenamiento
+Primero se transforman los datos originales en su conjunto. Luego se usan para entrenar el mejor modelo obtenido.
+
+Sugerencias
+
+Item 1: ¿ Por qué tiene estas dimensiones ?
+Faltaría hablar de las dimensiones. Cada fila es un review. Había 2000 reviews iniciales, de las cuales se tomó el 80% para train. Mientras que la cantidad de columnas está determinada por las palabras del dataset de train.
+
+Tener presente que significan conceptos como "falsos positivos" o "falsos negativos" es algo muy interesante relacionado con las matrices de confusión. Más info: métricas
+
+Existen otras técnicas de word embeddings diferentes a tfidf. Investigar la librería Gensim sirve para profundizar en algunas como LSA, word2vec o gloVe.
+
+El trabajo realizado cumple los objetivos propuestos. Si desea profundizar algún tema recordar que están disponibles los mentores y evaluadores por slack.
+
+A disfrutar la carrera. Saludos, Daniela.
+
