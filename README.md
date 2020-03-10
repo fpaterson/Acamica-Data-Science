@@ -147,7 +147,7 @@ No tengo más comentarios para hacerte, ya que está bien
 
 --------------------------------------------------------------------------------------
 
-Devolución de la mentora de Acámica a la cuarta entrega
+Devolución de la mentora de Acámica a la quinta entrega
 
 Hola, gracias por el envío, la entrega ya fue evaluada.
 
@@ -185,4 +185,40 @@ Existen otras técnicas de word embeddings diferentes a tfidf. Investigar la lib
 El trabajo realizado cumple los objetivos propuestos. Si desea profundizar algún tema recordar que están disponibles los mentores y evaluadores por slack.
 
 A disfrutar la carrera. Saludos, Daniela.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Devolución de la mentora de Acámica a la sexta entrega
+
+Buen día, seré la evaluadora de la entrega.
+
+Pude observar que se cumplen todas las consignas detalladas en el checklist. La solución enviada no presenta errores, el proyecto se encuentra aprobado.
+
+Indicaré como fueron evaluados cada uno de los puntos pedidos en el checklist del proyecto.
+
+Cargar Reader
+Acertada creación de la variable Reader. Luego se usa correctamente para obtener los datos de las películas.
+
+Ejecución con SVD
+Junto con los resultados de RMSE en testing, se muestra la parametrización del modelo y la implementación con cross validation pedida.
+
+Evaluación según factores SVD
+Además de graficar los RSME promedio obtenidos, previamente se observa una correcta generación de los modelos SVD, iterando sobre valores de factores en un rango dado.
+
+GridSearch y SVD
+Uso adecuado de GridSearch partiendo de la grilla de parámetros dada. Se indica la métrica RSME y refit en True como era requerido.
+
+Predicción de usuario
+Con el modelo generado se predice la puntuación para el usuario y la película Titanic.
+
+Mejor predicción posible para usuario
+Conveniente implementación de la función solicitada para recomendar películas.
+
+Sugerencias
+
+La entrega solo abarca algunas funcionalidades de Surprise. Se puede investigar para profundizar otras disponibles e implementar en sistemas de recomendación de su interés.
+
+Confío en que los comentarios y sugerencias aporten para seguir aprendiendo. Si hay dudas sobre la evaluación disponemos de slack para comunicarnos.
+
+Hasta el próximo envío. Saludos, Daniela.
 
